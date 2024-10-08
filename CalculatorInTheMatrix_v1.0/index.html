@@ -1,0 +1,76 @@
+<!-- CalculatorInTheMatrix v1.0 -->
+<!-- written by Jason Riley -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>CalculatorInTheMatrix</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/13.1.1/math.js"></script>
+
+        <span id="matrix-fx">
+        </span>
+
+        <div id="main-page">
+        <header>
+            <h1>Calculator</h1>
+            <div id="slider-box">
+                <span>mATrIx</span>
+                <label class="switch">
+                    <input id="matrix-btn" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </header>
+        <main>
+            <div id="floating-box">
+                <label for="floating-out1">Equation:</label>
+                <div id="floating-out1" class="floating-outs"></div>
+                <label for="floating-out2">Values:</label>
+                <div id="floating-out2" class="floating-outs"></div>
+                <label for="floating-out3">Results:</label>
+                <div id="floating-out3" class="floating-outs"></div>
+            </div>
+            <div id="outer-box">
+                <div id="output-box">
+                    <div id="inner-outbox">
+                        <div id="output">0</div>
+                    </div>
+                 </div>
+                <div id="buttons-box">
+                    <div id="all-clear" class="buttons">AC</div>
+                    <div id="pos-neg" class="buttons val-buttons">+/-</div>
+                    <div id="percent" class="buttons val-buttons">%</div>
+                    <div id="divide" class="buttons opers val-buttons">•/•</div>
+                    <div class="buttons numbers val-buttons">7</div>
+                    <div class="buttons numbers val-buttons">8</div>
+                    <div class="buttons numbers val-buttons">9</div>
+                    <div class="buttons opers val-buttons">X</div>
+                    <div class="buttons numbers val-buttons">4</div>
+                    <div class="buttons numbers val-buttons">5</div>
+                    <div class="buttons numbers val-buttons">6</div>
+                    <div class="buttons opers val-buttons">—</div>
+                    <div class="buttons numbers val-buttons">1</div>
+                    <div class="buttons numbers val-buttons">2</div>
+                    <div class="buttons numbers val-buttons">3</div>
+                    <div class="buttons opers val-buttons">+</div>
+                    <div id="zero-btn" class="buttons numbers val-buttons">0</div>
+                    <div id="decimal" class="buttons val-buttons">.</div>
+                    <div id="equals" class="buttons">=</div>
+                </div>
+            </div>
+
+        </main>
+        </div>
+
+
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
